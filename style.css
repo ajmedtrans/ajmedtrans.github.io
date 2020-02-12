@@ -708,6 +708,7 @@ body {
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
+    z-index: 5;
   }
 
   .nav-open {
@@ -817,5 +818,9 @@ body {
 
   .hero {
     background-position-x: 70%;
+  }
+
+  .contact-header-list__item {
+    margin-right: 1rem;
   }
 }
