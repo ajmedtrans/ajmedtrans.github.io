@@ -712,6 +712,7 @@ body {
 
   .nav-open {
     overflow: hidden;
+    height: 100%;
   }
 
   .nav-list.open {
