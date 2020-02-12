@@ -807,4 +807,8 @@ body {
   .footer-list__item p {
     font-size: 2vw;
   }
+
+  .hero {
+    background-position-x: 70%;
+  }
 }
