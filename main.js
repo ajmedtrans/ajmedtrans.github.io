@@ -7,6 +7,10 @@ const scrollFunction = () => {
 
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     nav.style.position = "sticky";
+    nav.style.position = "-webkit-sticky";
+    nav.style.position = "-moz-sticky";
+    nav.style.position = "-ms-sticky";
+    nav.style.position = "-o-sticky";
     nav.style.top = "0";
     nav.style.backgroundColor = "#fff";
     nav.style.transition = "all 0.2s";
