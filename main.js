@@ -27,9 +27,12 @@ const lazyLoadInstance = new LazyLoad({
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-list");
 const links = document.querySelectorAll(".nav-list__item");
+const body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
+  body.classList.toggle("nav-open");
+
   links.forEach(link => {
     link.classList.toggle("fade");
   });

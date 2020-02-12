@@ -709,6 +709,11 @@ body {
     transition: all 1s ease-out;
     pointer-events: none;
   }
+
+  .nav-open {
+    overflow: hidden;
+  }
+
   .nav-list.open {
     clip-path: circle(1200px at 90% -10%);
     -webkit-clip-path: circle(1200px at 90% -10%);
