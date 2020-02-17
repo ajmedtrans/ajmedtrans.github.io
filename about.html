@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Lighthouse</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/logo.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5043ace1a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="contact-header">
+      <ul class="contact-header-list">
+        <li class="contact-header-list__item">
+          <i class="fas fa-map-marker-alt"></i>
+          <a
+            href="https://www.google.com/maps/place/A%26J+Medical+Transportation,+5410+Sun+Valley+Dr,+Pensacola,+FL+32505/@30.464813,-87.2618404,15z/data=!4m2!3m1!1s0x8890bf720113b999:0xe9f8a9179e0be1c6"
+            >5410 Sun Valley Drive Pensacola, Florida 32505</a
+          >
+        </li>
+        <li class="contact-header-list__item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:1-850-346-1515">(850) 346-1515</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="nav">
+      <a href="/">
+        <img class="nav-logo" src="./img/logo.svg" alt="A&J Transportation" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="./about.html">About Us</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./services.html">Services</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./faq.html">FAQ</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-button">
+        <a href="/">Check my appointment</a>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    <section class="about">
+      <div class="about-header" data-aos="fade">
+        <p class="sub-page-header-text">
+          About <span class="gold-text">Us</span>
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
