@@ -839,6 +839,11 @@ body {
   background-color: #333333;
 }
 
+.pad-10 {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+
 .sub-page-content-flipped {
   order: 2;
   margin-right: 0;
