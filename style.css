@@ -359,6 +359,10 @@ LIGHT-BLUE: #9aa7cd
 YELLOW: #f2b11a
 **/
 
+html {
+  min-height: 100vh;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
