@@ -14,9 +14,11 @@ const scrollFunction = () => {
     nav.style.top = "0";
     nav.style.backgroundColor = "#fff";
     nav.style.transition = "all 0.2s";
+    nav.style.boxShadow = "0 4px 6px -6px black";
   } else {
     nav.style.position = "relative";
     nav.style.backgroundColor = "transparent";
+    nav.style.boxShadow = "none";
   }
 };
 
