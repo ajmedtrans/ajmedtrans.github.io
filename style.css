@@ -1069,6 +1069,8 @@ textarea {
 
   .sub-page-content {
     flex-direction: column;
+    margin-bottom: 2.5rem;
+    padding: 5rem 1rem;
   }
 
   .sub-page-content img {
@@ -1080,6 +1082,7 @@ textarea {
   }
   .sub-page-content-text {
     width: 85vw;
+    margin-bottom: 3rem;
   }
 
   .sub-page-content-title {
