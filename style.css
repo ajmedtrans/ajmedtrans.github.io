@@ -892,6 +892,9 @@ textarea {
 }
 
 @media screen and (max-width: 599px) {
+  body {
+    overscroll-behavior: none;
+  }
   .line {
     width: 30px;
     height: 3px;
