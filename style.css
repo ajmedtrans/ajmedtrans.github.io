@@ -360,7 +360,7 @@ YELLOW: #f2b11a
 **/
 
 html {
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 body {
