@@ -1013,6 +1013,7 @@ textarea {
 
   .footer {
     flex-direction: column;
+    padding-bottom: 2rem;
   }
 
   .footer-list {
