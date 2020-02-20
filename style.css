@@ -1261,6 +1261,10 @@ textarea:focus ~ .highlight {
   animation: inputHighlighter 0.3s ease;
 }
 
+.mobile-spacer {
+  display: none;
+}
+
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
   from {
