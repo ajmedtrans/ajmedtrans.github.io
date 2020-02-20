@@ -11,12 +11,6 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
-      integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
-      crossorigin="anonymous"
-    />
     <script
       src="https://kit.fontawesome.com/5043ace1a5.js"
       crossorigin="anonymous"
@@ -73,12 +67,72 @@
         </p>
       </div>
       <div class="contact-content-container">
-        <div class="contact-content-call">
-          <p class="contact-content-call-title">Give Us A Ring</p>
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          class="contact-content-call"
+        >
+          <i class="fas fa-phone-volume"></i>
+          <p class="contact-content-call-title">
+            Give <span class="gold-text">Us</span> A Ring
+          </p>
           <a class="contact-content-call-num" href="">(850) 346-1515</a>
         </div>
-        <div class="line-spacer"></div>
-        <div class="contact-content-form"></div>
+        <div data-aos="fade" data-aos-offset="500" class="outer">
+          <div class="inner"></div>
+        </div>
+        <p class="mobile-spacer">Or</p>
+        <div
+          data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-delay="150"
+          class="contact-content-form"
+        >
+          <p class="contact-content-form-title">
+            Send <span class="gold-text">Us </span>A Message
+          </p>
+          <form>
+            <div class="group">
+              <input type="text" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Name</label>
+            </div>
+
+            <div class="group">
+              <input type="email" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">
+              <input type="text" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Subject</label>
+            </div>
+            <div class="group">
+              <textarea
+                name="Message"
+                id="message"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Message</label>
+            </div>
+            <div class="group">
+              <input
+                style="color: #fff;"
+                class="contact-form-button"
+                type="submit"
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <section class="footer">

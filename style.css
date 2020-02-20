@@ -1043,17 +1043,31 @@ body {
   width: 100vw;
   height: 95vh;
   display: flex;
-  justify-content: spacearound;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .contact-content-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
 }
 
 .contact-content-call-title {
   font-size: 3.5rem;
   font-weight: 900;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-content-call i {
+  font-size: 5rem;
+  margin-bottom: 0em;
+  text-align: center;
+  transform: rotateZ(-40deg);
 }
 
 .contact-content-call-num {
@@ -1064,7 +1078,216 @@ body {
   color: #f2b11a;
 }
 
+.contact-form-button {
+  padding: 1.2rem 1.5rem;
+  background-color: #223e92;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-self: flex-end;
+
+  transition: all 0.2s;
+}
+
+.contact-form-button:hover {
+  transform: translateY(-5px);
+  background-color: #f2b11a;
+}
+
+.outer {
+  width: 1px;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: grey;
+  top: 30%;
+  box-shadow: 0px 0px 30px 20px grey;
+}
+
 .contact-content-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content-form-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+textarea {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  resize: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:invalid ~ .bar:before,
+input:invalid ~ .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: red;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+textarea:focus ~ .bar:before {
+  width: 50%;
+}
+
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -1277,5 +1500,51 @@ body {
   .sub-page-content-title {
     width: 100%;
     font-size: 3rem;
+  }
+
+  .contact-content-container {
+    margin-top: 5rem;
+    flex-direction: column;
+  }
+  .contact-content-call {
+    width: 100%;
+  }
+
+  .contact-content-call-title {
+    font-size: 2.5rem;
+  }
+
+  .mobile-spacer {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 2rem 0;
+  }
+
+  .contact-content-call-num {
+    font-size: 3rem;
+  }
+
+  .outer {
+    display: none;
+  }
+
+  .contact-content-form-title {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer-spacer-title {
+    font-size: 2rem;
+  }
+
+  .sub-page-header-text {
+    font-size: 4rem;
   }
 }
