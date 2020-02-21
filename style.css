@@ -1949,8 +1949,13 @@ textarea:focus ~ .highlight {
 
   .price-container {
     width: 60%;
-    padding-bottom: 2rem;
+    padding-bottom: 4vw;
     margin-bottom: 1rem;
+  }
+
+  .sub-page-pricing-content {
+    min-height: 100vh;
+    margin-bottom: 3rem;
   }
 
   .price-card-icon {
@@ -1987,6 +1992,14 @@ textarea:focus ~ .highlight {
   .price-card-small-additional {
     margin-top: 0.3rem;
     width: 85%;
+  }
+
+  .price-container-small:last-of-type {
+    margin-right: 0;
+  }
+
+  .price-card-icon-small {
+    margin-bottom: 1rem !important;
   }
 
   .contact-content-container {
