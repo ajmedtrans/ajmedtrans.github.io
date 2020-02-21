@@ -1507,8 +1507,9 @@ textarea:focus ~ .highlight {
   }
 
   .contact-content-container {
-    margin-top: 5rem;
+    margin-top: 0rem;
     flex-direction: column;
+    padding-top: 3rem;
   }
   .contact-content-call {
     width: 100%;
@@ -1520,13 +1521,17 @@ textarea:focus ~ .highlight {
 
   .mobile-spacer {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
   }
 
   .contact-content-call-num {
     font-size: 3rem;
+  }
+
+  .contact-content-call i {
+    font-size: 3.5rem;
   }
 
   .outer {
@@ -1551,5 +1556,78 @@ textarea:focus ~ .highlight {
 
   .sub-page-header-text {
     font-size: 4rem;
+  }
+
+  .sub-page-pricing ul {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .sub-page-pricing {
+    margin-bottom: 2rem;
+    height: 100vh;
+  }
+
+  .sub-page-content-title {
+    text-align: center;
+  }
+
+  .price-container {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .price-card-icon {
+    height: 5rem;
+  }
+
+  .price-card-title {
+    font-size: 1.5rem;
+  }
+
+  .price-card-first-ten {
+    font-size: 1rem;
+  }
+
+  .price-card-price {
+    font-size: 4.5rem;
+  }
+
+  .price-card-per-mile-after {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .price-card-price-small {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .contact-content-container {
+    overflow-y: hidden;
+  }
+
+  .contact-form-button {
+    padding: 0.8rem;
+  }
+
+  .group:nth-of-type(4) {
+    margin-bottom: 0.3rem;
+  }
+
+  .group:nth-of-type(5) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pad-top-0 {
+    padding-top: 0;
+  }
+
+  .mb-10 {
+    margin-bottom: 10rem;
   }
 }
