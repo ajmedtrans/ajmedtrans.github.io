@@ -1950,7 +1950,8 @@ textarea:focus ~ .highlight {
 
   .price-container {
     width: 60%;
-    padding-bottom: 8vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
 
