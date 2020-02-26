@@ -1872,6 +1872,7 @@ textarea:focus ~ .highlight {
   }
   .contact-content-call {
     width: 100%;
+    display: none;
   }
 
   .contact-content-call-title {
@@ -1879,10 +1880,10 @@ textarea:focus ~ .highlight {
   }
 
   .mobile-spacer {
-    display: block;
     font-size: 2rem;
     font-weight: 900;
     margin: 1.5rem 0;
+    display: none;
   }
 
   .contact-content-call-num {
