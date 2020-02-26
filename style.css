@@ -1591,6 +1591,11 @@ textarea:focus ~ .highlight {
   margin: 0;
 }
 
+.captcha {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
   from {
