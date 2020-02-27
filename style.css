@@ -1575,7 +1575,7 @@ textarea:focus ~ .highlight {
   .price-card-icon {
     width: 100%;
     min-height: 5rem;
-    margin-top: 0.5rem;
+    margin-top: auto;
     height: 17vw;
   }
   .price-card-title {
@@ -1597,6 +1597,7 @@ textarea:focus ~ .highlight {
   }
 
   .price-card-price-small {
+    margin-bottom: auto;
     padding-bottom: 1rem;
     font-size: 1.3rem;
   }
