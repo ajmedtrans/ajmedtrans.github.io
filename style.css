@@ -1601,6 +1601,7 @@ textarea:focus ~ .highlight {
     font-size: 1.3rem;
   }
   .price-card-small-price {
+    margin-bottom: auto;
     font-size: 8vw;
   }
   .price-card-small-additional {
