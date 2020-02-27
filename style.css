@@ -1586,6 +1586,10 @@ textarea:focus ~ .highlight {
     font-size: 3.5vw;
   }
 
+  .dis-none {
+    display: none;
+  }
+
   .price-card-per-mile-after {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
@@ -1649,6 +1653,6 @@ textarea:focus ~ .highlight {
     padding-top: 0;
   }
   .mb-10 {
-    margin-bottom: 10rem;
+    margin-bottom: 10rem !important;
   }
 }
