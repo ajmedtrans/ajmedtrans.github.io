@@ -1601,11 +1601,11 @@ textarea:focus ~ .highlight {
     font-size: 1.3rem;
   }
   .price-card-small-price {
-    margin-bottom: auto;
     font-size: 8vw;
   }
   .price-card-small-additional {
     font-size: 2.8vw;
+    margin-bottom: auto;
     margin-top: 0.3rem;
     width: 85%;
   }
@@ -1627,6 +1627,7 @@ textarea:focus ~ .highlight {
     margin-right: 0;
   }
   .price-card-icon-small {
+    margin-top: auto;
     height: 15vw !important;
     margin-bottom: 1rem !important;
   }
