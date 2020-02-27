@@ -1563,7 +1563,7 @@ textarea:focus ~ .highlight {
     min-width: 22rem;
     max-width: 75%;
 
-    max-height: 33%;
+    max-height: 35%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
