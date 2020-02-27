@@ -812,10 +812,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 20%;
-  height: 33rem;
+  width: 20vw;
+  height: 100%;
+  max-height: 30vw;
   border-radius: 15px;
   padding-top: 1.5rem;
+  padding-bottom: 1vw;
   background-color: #223e92;
   -webkit-box-shadow: 0 8px 6px -6px #000;
   box-shadow: 0 8px 6px -6px #000;
@@ -834,9 +836,10 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50%;
+  min-width: 15rem;
+  max-width: 50%;
   margin-right: 1rem;
-  height: 100%;
+  height: 20vw;
   border-radius: 15px;
   padding-top: 1.5rem;
   background-color: #fff;
@@ -845,7 +848,8 @@ body {
 }
 .price-card-icon-small {
   width: 100% !important;
-  height: 5rem !important;
+  height: 5vw !important;
+  margin-bottom: 1rem;
   margin-right: 0 !important;
   border-radius: none !important;
   -webkit-box-shadow: none !important;
@@ -854,42 +858,43 @@ body {
 .price-card-title {
   font-weight: 600;
   color: #fff;
-  font-size: 2rem;
+  font-size: 2vw;
   margin-top: 0;
   margin-bottom: 0;
 }
 .price-card-first-ten {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 0;
 }
 .price-card-per-mile-after {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.3vw;
 }
 .price-card-icon {
-  width: 25%;
-  height: 10rem;
+  width: 100%;
+  height: 7vw;
+  margin-bottom: 1rem;
 }
 .price-card-price {
   margin: 0;
   font-weight: 400;
-  font-size: 7rem;
+  font-size: 7vw;
   color: #f2b11a;
 }
 .price-card-price-small {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   color: #f2b11a;
 }
 .price-card-small-additional {
-  font-size: 0.9rem;
+  font-size: 0.9vw;
   font-style: italic;
 }
 .price-card-title-small {
   font-weight: 600;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 1.3vw;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -897,6 +902,7 @@ body {
 .price-card-first-ten-small {
   text-align: center;
   font-weight: 400;
+  font-size: 1vw;
 }
 .icon-fix {
   width: 45% !important;
@@ -905,7 +911,7 @@ body {
   margin: 0;
 }
 .sub-page-content-title {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   font-weight: 900;
   margin: 0;
 }
@@ -922,6 +928,7 @@ body {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  align-items: center;
   list-style: none;
 }
 .sub-page-pricing-content {
@@ -948,8 +955,9 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 5vw;
   width: 100vw;
-  height: 30vw;
+  height: 40vw;
 }
 .sub-page-pricing-small {
   display: -webkit-box;
@@ -1207,7 +1215,7 @@ textarea:focus ~ .highlight {
 .price-card-small-price {
   color: #f2b11a;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 3vw;
   margin: 0;
 }
 .captcha {
@@ -1507,15 +1515,18 @@ textarea:focus ~ .highlight {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-top: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     height: 100vh;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
   }
   .sub-page-pricing {
+    margin-top: 0;
     margin-bottom: 2rem;
     height: 100vh;
   }
@@ -1524,32 +1535,41 @@ textarea:focus ~ .highlight {
     text-align: center;
   }
   .price-container {
-    width: 60%;
+    min-width: 22rem;
+    max-width: 75%;
+
+    max-height: 33%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
   .sub-page-pricing-content {
     min-height: 100vh;
-    margin-bottom: 3rem;
   }
   .price-card-icon {
-    height: 5rem;
+    width: 100%;
+    min-height: 5rem;
+    margin-top: 0.5rem;
+    height: 17vw;
   }
   .price-card-title {
-    font-size: 1.5rem;
+    font-size: 5vw;
   }
   .price-card-first-ten {
-    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-size: 3.5vw;
   }
-  .price-card-price {
-    font-size: 3rem;
-  }
+
   .price-card-per-mile-after {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     font-size: 1rem;
   }
+
+  .price-card-price {
+    font-size: 13vw;
+  }
+
   .price-card-price-small {
     padding-bottom: 1rem;
     font-size: 1.3rem;
